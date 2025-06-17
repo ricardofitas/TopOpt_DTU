@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Video Demo</title>
+  <meta charset="UTF-8">
+  <title>Simulation Video Gallery</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    video { margin-bottom: 40px; display: block; }
+    h2 { margin-top: 60px; }
+  </style>
 </head>
 <body>
-  <h1>Simulation Video</h1>
-  <video width="720" controls>
-    <source src="Figures/topopt_result_comb01.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+  <h1>Simulation Video Table</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Figure</th>
+        <th>Video</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Only figures with known videos are included -->
+      <tr><td>Figure 1</td><td><a href="#fig1">View</a></td></tr>
+      <tr><td>Figure 2</td><td><a href="#fig2">View</a></td></tr>
+      <tr><td>Figure 3</td><td><a href="#fig3">View</a></td></tr>
+      <tr><td>Figure 4</td><td><a href="#fig4">View</a></td></tr>
+      <tr><td>Figure 5</td><td><a href="#fig5">View</a></td></tr>
+      <tr><td>Figure 6</td><td><a href="#fig6">View</a></td></tr>
+      <tr><td>Figure 7</td><td><a href="#fig7">View</a></td></tr>
+      <tr><td>Figure 8</td><td><a href="#fig8">View</a></td></tr>
+      <tr><td>Figure 9</td><td><a href="#fig9">View</a></td></tr>
+      <tr><td>Figure 10</td><td><a href="#fig10">View</a></td></tr>
+      <tr><td>Figure 11</td><td><a href="#fig11">View</a></td></tr>
+      <tr><td>Figure 12</td><td><a href="#fig12">View</a></td></tr>
+      <tr><td>Figure 13</td><td><a href="#fig13">View</a></td></tr>
+      <tr><td>Figure 14</td><td><a href="#fig14">View</a></td></tr>
+      <tr><td>Figure 15</td><td><a href="#fig15">View</a></td></tr>
+      <tr><td>Figure 16</td><td><a href="#fig16">View</a></td></tr>
+      <tr><td>Figure 17</td><td><a href="#fig17">View</a></td></tr>
+      <tr><td>Figure 20</td><td><a href="#fig20">View</a></td></tr>
+      <tr><td>Figure 21</td><td><a href="#fig21">View</a></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Video sections -->
+  <h2 id="fig1">Figure 1: Coarse discretization</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb01.mp4" type="video/mp4"></video>
+
+  <h2 id="fig2">Figure 2: Finer discretization</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb02.mp4" type="video/mp4"></video>
+
+  <h2 id="fig3">Figure 3: Sensitivity filtering</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb03.mp4" type="video/mp4"></video>
+
+  <h2 id="fig4">Figure 4: No filtering (checkerboard)</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb04.mp4" type="video/mp4"></video>
+
+  <h2 id="fig5">Figure 5: Filter radius increased</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb05.mp4" type="video/mp4"></video>
+
+  <h2 id="fig6">Figure 6: Penalization increased to 5</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb06.mp4" type="video/mp4"></video>
+
+  <h2 id="fig7">Figure 7: Heaviside projection</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb07.mp4" type="video/mp4"></video>
+
+  <h2 id="fig8">Figure 8: Continuous downward load</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb08.mp4" type="video/mp4"></video>
+
+  <h2 id="fig9">Figure 9: Continuous upward load</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb09.mp4" type="video/mp4"></video>
+
+  <h2 id="fig10">Figure 10: Central fixture</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb10.mp4" type="video/mp4"></video>
+
+  <h2 id="fig11">Figure 11: Balanced multiple loads</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb11.mp4" type="video/mp4"></video>
+
+  <h2 id="fig12">Figure 12: Load biased towards top-right</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb12.mp4" type="video/mp4"></video>
+
+  <h2 id="fig13">Figure 13: Load biased towards top-center</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb13.mp4" type="video/mp4"></video>
+
+  <h2 id="fig14">Figure 14: With passive void</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb14_1.mp4" type="video/mp4"></video>
+
+  <h2 id="fig15">Figure 15: Without passive void</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb14.mp4" type="video/mp4"></video>
+
+  <h2 id="fig16">Figure 16: OC solver</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb15_1.mp4" type="video/mp4"></video>
+
+  <h2 id="fig17">Figure 17: MMA solver</h2>
+  <video width="720" controls><source src="Videos/topopt_result_comb15.mp4" type="video/mp4"></video>
+
+  <h2 id="fig20">Figure 20: Static dynamic compliance ($\omega=0$)</h2>
+  <video width="720" controls><source src="Videos/topopt_result_ex22.mp4" type="video/mp4"></video>
+
+  <h2 id="fig21">Figure 21: Harmonic excitation ($\omega=0.009$)</h2>
+  <video width="720" controls><source src="Videos/topopt_result_ex23.mp4" type="video/mp4"></video>
+
 </body>
 </html>
